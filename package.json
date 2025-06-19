@@ -1,0 +1,31 @@
+{
+  "name": "@amneacsu/toolbox",
+  "version": "0.0.0",
+  "module": "./dist/main.mjs",
+  "typings": "./dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "rspack serve",
+    "build": "rspack build && tsc --emitDeclarationOnly"
+  },
+  "author": "Andrei Neacșu <amneacsu@gmail.com>",
+  "repository": "https://github.com/amneacsu/toolbox",
+  "license": "ISC",
+  "description": "",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.3.15",
+    "@types/react": "^19.1.8",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "styled-components": "^6.1.19"
+  }
+}
